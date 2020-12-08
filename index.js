@@ -1,7 +1,7 @@
 /*
  * @Author: nigel
  * @Date: 2020-12-02 18:32:35
- * @LastEditTime: 2020-12-07 18:55:17
+ * @LastEditTime: 2020-12-08 11:26:36
  */
 const program = require("commander");
 
@@ -12,27 +12,33 @@ program
 
 program
   .command("create <project-name>")
-  .description("初始化项目")
-  .option("-g, --git [path] ", "是否创建git仓库")
+  .description("init project")
+  .option("-g, --git [path] ", "Do you want to create git repository")
   .action(async (name, cmd) => {
     const options = cleanArgs(cmd);
     require("../lib/create")(name, options);
   });
-program
-  .command("git")
-  .description("git相关的一些配置操作")
-  .action(() => {
-    require("../lib/git")();
-  });
 
 program.command("*").action(function (env) {
-  console.log("指令错误");
+  console.log("Command error");
 });
 program.parse(process.argv);
 
+/*
+ * @name:camelize
+ * @msg: Capitalize words
+ * @param {string}
+ * @return {string}
+ */
 function camelize(str) {
   return str.replace(/-(\w)/g, (_, c) => (c ? c.toUpperCase() : ""));
 }
+/*
+ * @name:cleanArgs
+ * @msg: Normalizes option parameters for command line input
+ * @param {object}
+ * @return {object}
+ */
 function cleanArgs(cmd) {
   const args = {};
   cmd.options.forEach((o) => {

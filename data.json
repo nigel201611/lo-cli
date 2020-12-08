@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "vue-signle-page",
-        "description": "vue 单页模版",
+        "description": "vue single page template",
         "url": "gitee:nigel2018/nri_demo_webpack4"
     }
 ]
