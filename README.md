@@ -1,7 +1,7 @@
 <!--
  * @Author: nigel
  * @Date: 2020-12-02 18:02:13
- * @LastEditTime: 2020-12-08 11:30:56
+ * @LastEditTime: 2020-12-08 11:42:53
 -->
 
 # lo-cli
@@ -10,4 +10,5 @@
 
 ## 使用
 
-node ./index.js create projectName
+npm install -g lo/cli
+lo create my-project
