@@ -1,14 +1,14 @@
 <!--
  * @Author: nigel
  * @Date: 2020-12-02 18:02:13
- * @LastEditTime: 2020-12-08 11:42:53
+ * @LastEditTime: 2020-12-08 11:49:12
 -->
 
 # lo-cli
 
-通过命令行的方式，收拢各技术栈框架模板
+Through the command line, collapse the framework template of each technology stack
 
-## 使用
+## USE
 
 npm install -g lo/cli
 lo create my-project

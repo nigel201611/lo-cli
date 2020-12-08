@@ -1,22 +1,22 @@
 {
-  "name": "fe-cli",
+  "name": "lo-cli",
   "version": "1.0.0",
-  "description": "fe cli",
+  "description": "lo cli",
   "main": "index.js",
+  "bin": {
+    "lo":"bin/lo.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "node --inspect --inspect-brk ./index.js create test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git"
   },
   "keywords": [
     "frontend-cli",
-    "fe",
-    "gitlab",
-    "gitlab cli"
+    "lo-cli"
   ],
-  "author": "hucheng",
+  "author": "nigel",
   "license": "mit",
   "dependencies": {
     "axios": "^0.18.0",
@@ -33,5 +33,8 @@
     "kopy": "^8.3.1",
     "ora": "^3.4.0",
     "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": "^10.12.0 || ^12.0.0 || >= 14.0.0"
   }
 }
