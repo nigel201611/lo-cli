@@ -1,7 +1,7 @@
 <!--
  * @Author: nigel
  * @Date: 2020-12-02 18:02:13
- * @LastEditTime: 2020-12-08 17:07:48
+ * @LastEditTime: 2020-12-08 17:17:13
 -->
 
 # lo-cli
@@ -18,7 +18,8 @@ lo create my-project
 ### can add your template repository which surport github|gitlab|bitbucket|gitee repository
 
 lo add react-single-page github|gitlab|bitbucket|gitee:username/repository-name <br/>
-lo add vue-signle-page gitee:nigel2018/nri_demo_webpack4
+lo add vue-signle-page gitee:nigel2018/nri_demo_webpack4 <br/>
+lo add other-single-page direct:https://github.com/xxxx/xxxx.git <br/>
 
 ### view all the template repository
 
