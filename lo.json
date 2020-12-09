@@ -1,6 +1,10 @@
-[
-    {
-        "name": "template description",
-        "url": "github|gitlab|bitbucket|gitee:username/repo-name"
-    }
-]
+{
+    "registryRepository": [
+        {
+            "name": "vue-signle-page2",
+            "url": "gitee:nigel2018/nri_demo_webpack4"
+        }
+    ],
+    "githubToken": "4a99402dbbe71dfff3216db2fc43f97da68eeee8",
+    "githubOrgsName": "for-nigel2020"
+}

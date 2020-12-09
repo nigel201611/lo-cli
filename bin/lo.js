@@ -2,11 +2,12 @@
 /*
  * @Author: nigel
  * @Date: 2020-12-02 18:32:35
- * @LastEditTime: 2020-12-08 16:39:27
+ * @LastEditTime: 2020-12-09 17:40:08
  */
 const fs = require("fs");
 const program = require("commander");
 const registry = require("../lib/utils/registry.js");
+const { option } = require("commander");
 
 program
   .version(require("../package").version)
@@ -16,7 +17,7 @@ program
 program
   .command("create <project-name>")
   .description("init project")
-  .option("-g, --git [path] ", "Do you want to create git repository")
+  .option("--github [path] ", "Do you want to create github repository")
   .action(async (name, cmd) => {
     const options = cleanArgs(cmd);
     require("../lib/create")(name, options);
