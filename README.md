@@ -1,7 +1,7 @@
 <!--
  * @Author: nigel
  * @Date: 2020-12-02 18:02:13
- * @LastEditTime: 2020-12-08 17:17:13
+ * @LastEditTime: 2020-12-09 14:09:59
 -->
 
 # lo-cli
@@ -20,6 +20,19 @@ lo create my-project
 lo add react-single-page github|gitlab|bitbucket|gitee:username/repository-name <br/>
 lo add vue-signle-page gitee:nigel2018/nri_demo_webpack4 <br/>
 lo add other-single-page direct:https://github.com/xxxx/xxxx.git <br/>
+
+### also surport customize file,you can configure data in lo.json in your current working direcotry
+
+lo.json file contents as following: <br/>
+
+```javascript
+[
+  {
+    name: "template description",
+    url: "github|gitlab|bitbucket|gitee:username/repo-name",
+  },
+];
+```
 
 ### view all the template repository
 
