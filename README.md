@@ -1,7 +1,7 @@
 <!--
  * @Author: nigel
  * @Date: 2020-12-02 18:02:13
- * @LastEditTime: 2020-12-09 14:14:55
+ * @LastEditTime: 2020-12-10 15:23:08
 -->
 
 # lo-cli
@@ -26,12 +26,14 @@ lo add other-single-page direct:https://github.com/xxxx/xxxx.git <br/>
 lo.json file contents as following: <br/>
 
 ```json
-[
-  {
-    "name": "template description",
-    "url": "github|gitlab|bitbucket|gitee:username/repo-name"
-  }
-]
+{
+  "registryRepository": [
+    {
+      "name": "vue-signle-page2",
+      "url": "gitee:username/repo-name"
+    }
+  ]
+}
 ```
 
 ### view all the template repository
