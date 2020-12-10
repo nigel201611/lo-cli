@@ -1,7 +1,7 @@
 <!--
  * @Author: nigel
  * @Date: 2020-12-02 18:02:13
- * @LastEditTime: 2020-12-10 15:23:08
+ * @LastEditTime: 2020-12-10 18:39:09
 -->
 
 # lo-cli
@@ -39,3 +39,19 @@ lo.json file contents as following: <br/>
 ### view all the template repository
 
 lo ls
+
+### can setting organization repository in lo.json in your current working directory
+
+```json
+{
+  "registryRepository": [],
+  "githubToken": "your github access token",
+  "githubOrgsName": "your github organization name"
+}
+```
+
+github access token can be set in github Settings <br/>
+Settings->Developer settings->Personal acess tokens <br/>
+remember to choice user and repo scope <br/>
+refer link: <br>
+https://docs.github.com/cn/free-pro-team@latest/rest/reference/repos#create-an-organization-repository
