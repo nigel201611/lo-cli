@@ -1,7 +1,7 @@
 <!--
  * @Author: nigel
  * @Date: 2020-12-02 18:02:13
- * @LastEditTime: 2020-12-10 18:43:53
+ * @LastEditTime: 2020-12-10 18:51:28
 -->
 
 # lo-cli
@@ -46,7 +46,10 @@ lo.json file contents as following: <br/>
 lo ls
 ```
 
-### add --github options when you use lo cli to create template project
+### you can add --github options when you use lo cli to create template project
+
+> --github option will auto help you to create organization repository and git remote add,git push your code to it;<br/>
+> currently just consider github;<br/>
 
 example:lo create test --github <br/>
 you need to set organization repository in lo.json in your current working directory <br/>
