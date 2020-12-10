@@ -1,10 +1,5 @@
 {
-    "registryRepository": [
-        {
-            "name": "vue-signle-page2",
-            "url": "gitee:nigel2018/nri_demo_webpack4"
-        }
-    ],
-    "githubToken": "4a99402dbbe71dfff3216db2fc43f97da68eeee8",
+    "registryRepository": [],
+    "githubToken": "f991f4a01d31fe5854f819f0b40763259dadb025",
     "githubOrgsName": "for-nigel2020"
 }
