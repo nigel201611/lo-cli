@@ -1,6 +1,6 @@
 {
   "name": "@nigel2020/lo-cli",
-  "version": "1.0.61",
+  "version": "1.0.62",
   "description": "lo cli",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,11 @@
   },
   "keywords": [
     "frontend-cli",
-    "lo-cli"
+    "lo-cli",
+    "cli",
+    "vue-cli",
+    "git-cli",
+    "git"
   ],
   "author": "nigel",
   "license": "MIT",
