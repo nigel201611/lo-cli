@@ -2,9 +2,9 @@
 /*
  * @Author: nigel
  * @Date: 2020-12-02 18:32:35
- * @LastEditTime: 2020-12-09 17:40:08
+ * @LastEditTime: 2020-12-21 10:27:38
  */
-const fs = require("fs");
+const chalk = require("chalk");
 const program = require("commander");
 const registry = require("../lib/utils/registry.js");
 const { option } = require("commander");
@@ -36,7 +36,7 @@ program
   .action(list);
 
 program.command("*").action(function (env) {
-  console.log("Command error");
+  console.log(chalk.red("Command error"));
 });
 program.parse(process.argv);
 
@@ -50,9 +50,10 @@ function list() {
   const allRegistry = registry.getAllRegistry();
   console.log("\r");
   for (let i = 0, len = allRegistry.length; i < len; i++) {
-    console.log("    " + i + "---" + JSON.stringify(allRegistry[i]));
+    console.log(
+      chalk.blue(i + 1) + "." + chalk.green(JSON.stringify(allRegistry[i]))
+    );
   }
-  console.log("\r");
 }
 
 /*
